@@ -1,0 +1,119 @@
+
+
+
+/* main */
+
+/* main section 1 */
+.main_section_1{
+    height: 560px;
+    background-image: url("../images/cover.png");
+    background-position: center;
+    padding-top: 72px;
+}
+h2{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    text-align: center;
+}
+.h2_span{
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 0%;
+    color: #05BCCA;
+}
+h2::after{
+    content: url("../images/arrow.svg");
+    margin-left: 24px;
+}
+h2:hover::after{
+    cursor: pointer;
+}
+
+/* main section 2 */
+.main_section_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 64px;
+    padding: 96px 94px;
+    background-color: #1A1A1A;
+}
+h3{
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 52px;
+    letter-spacing: 0%;
+    color: #05BCCA;
+    position: relative;
+    display: block;
+}
+h3::after {
+  content: "";
+  width: 187px;
+  border-bottom: 2px solid #05BCCA;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  margin-top: 8px;
+}
+
+.article_div{
+    display: flex;
+    column-gap: 20px;
+}
+.cards{
+    padding:8px 8px 16px;
+    background-color: #2C4246;
+    width: 298px;
+height: 331px;
+border: 1px solid #05BCCA;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+transition: .3s;
+}
+.cards:hover{
+    box-shadow: 0px 0px 8px 4px #05BCCACC;
+    cursor: pointer;
+}
+.cards_bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.page1_h{
+    font-family: Inter;
+font-weight: 700;
+font-size: 16px;
+line-height: 27px;
+letter-spacing: 0%;
+color: #D9D9D9;
+}
+.price{
+    font-family: Inter;
+font-weight: 400;
+font-size: 16px;
+line-height: 27px;
+letter-spacing: 0%;
+color:#05BCCA ;
+}
+.add_button{
+    width: 58px;
+height: 28px;
+border-radius: 4px;
+background-color: #C46A2B;
+font-family: Inter;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+letter-spacing: 0%;
+color: #FFFFFF;
+border: none;
+}
