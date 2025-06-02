@@ -113,6 +113,7 @@ background-color: #C46A2B;
 justify-content: center;
 align-items: center;
 border: none;
+cursor: pointer;
 }
 .button_p{
     font-family: Inter;
