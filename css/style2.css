@@ -6,13 +6,14 @@ padding:96px 94px ;
 display: flex;
 flex-direction: column;
 row-gap: 64px;
+margin-top: 96px;
 }
 .filter_sort{
     display: flex;
     justify-content: space-between;
 }
 .filter_p{
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
 font-weight: 700;
 font-size: 24px;
 line-height: 32px;
@@ -34,7 +35,7 @@ color: #D9D9D9;
     column-gap: 32px;
 }
 .sort_p{
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
 font-weight: 700;
 font-size: 24px;
 line-height: 32px;
@@ -74,7 +75,7 @@ transition: .3s;
     justify-content: space-between;
 }
 .guitar_p{
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
 font-weight: 700;
 font-size: 16px;
 line-height: 27px;
@@ -82,7 +83,7 @@ letter-spacing: 0%;
 color: #D9D9D9;
 }
 .price1{
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
 font-weight: 400;
 font-size: 16px;
 line-height: 27px;
@@ -100,7 +101,20 @@ justify-content: center;
 color:#FFFFFF ;
 border: none;
 cursor: pointer;
+transition: .3s;
 }
+.cart:hover{
+       animation: wiggle 0.4s ease-in-out;
+
+
+}
+@keyframes wiggle {
+  0%, 100%{transform: rotate(0);}
+  25%{transform: rotate(10deg);}
+  50%{transform: rotate(-10deg);}
+  75%{transform: rotate(5deg);}
+}
+
 /* pages */
 .previous{
 display: flex;
@@ -114,15 +128,20 @@ justify-content: center;
 align-items: center;
 border: none;
 cursor: pointer;
+transition: .3s;
+}
+.previous:hover{
+    box-shadow: 0px 0px 8px 2px #05BCCACC;
 }
 .button_p{
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
 font-weight: 400;
 font-size: 16px;
 line-height: 24px;
 letter-spacing: 0%;
 color: #D9D9D9;
 }
+
 .fa-angle-left,
 .fa-angle-right{
     color: #D9D9D9;
@@ -135,7 +154,7 @@ color: #D9D9D9;
     justify-content: space-between;
 }
 .oneto5{
-font-family: Inter;
+font-family: "Inter", sans-serif;
 font-weight: 400;
 font-size: 16px;
 line-height: 24px;
@@ -153,5 +172,10 @@ color: #FFFFFF;
     width: 92px;
 height: 40px;
 border-radius: 8px;
+transition: .3s;
+cursor: pointer;
+}
+.next:hover{
+    box-shadow: 0px 0px 8px 2px #C46A2B;
 
 }
